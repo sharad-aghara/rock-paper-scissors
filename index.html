@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <script src="final.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="child-level-1">
+            <h1>Welcome to league of Rock-Paper-Scissors</h1>
+
+            <div class="child-level-2">
+                <button value="0" onclick="getUserChoice(this)">Rock</button>
+                <button value="1" onclick="getUserChoice(this)">Paper</button>
+                <button value="2" onclick="getUserChoice(this)">Scissors</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="display: none;">
+
+        <div class="one">
+            <h1>Methods to serve .html file on a local server</h1>
+
+            <ol>
+                <li>open .html file in browser by clicking on the file in file explorer it self</li>
+                <li>add local server extension and serve on local server through it</li>
+                <li>python -m http.server</li>
+                <li>npx serve</li>
+                <li>http-server (http-server package installed)</li>
+            </ol>
+        </div>
+
+        <div class="two">
+            
+            <label for="userInput">Enter your choice:</label>
+            <input type="text" id="userInput">
+            <button onclick="getInput()">Submit</button>
+            
+        </div>
+
+        <div class="three">
+            <button value="0" onclick="captureValue(this)">Rock</button>
+            <button value="1" onclick="captureValue(this)">Paper</button>
+            <button value="2" onclick="captureValue(this)">Scissors</button>
+
+            <p>User input <span id="clickedValue">None</span></p>
+        </div>
+
+    </div>
+</body>
+
+</html>
